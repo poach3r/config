@@ -1,5 +1,6 @@
 #include <iomanip>
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 int main(void)
@@ -13,36 +14,38 @@ int main(void)
     if(browser==1)
     {
         if(text==1)
-            system("yay -S lightdm rofi polybar firefox i3-git neofetch thunar lxappearance vim alacritty");
+            system("yay -S rofi polybar firefox i3-wm neofetch thunar lxappearance vim alacritty");
         else if(text==2)
-            system("yay -S lightdm rofi polybar firefox i3-git neofetch thunar lxappearance neovim alacritty");
+            system("yay -S rofi polybar firefox i3-wm neofetch thunar lxappearance neovim alacritty");
         else if(text==3)
-            system("yay -S lightdm rofi polybar firefox i3-git neofetch thunar lxappearance vscodium-bin alacritty");
+            system("yay -S rofi polybar firefox i3-wm neofetch thunar lxappearance vscodium-bin alacritty");
         else if(text==4)
-            system("yay -S lightdm rofi polybar firefox i3-git neofetch thunar lxappearance code alacritty");
+            system("yay -S rofi polybar firefox i3-wm neofetch thunar lxappearance code alacritty");
     }
     else if(browser==2)
     {
         if(text==1)
-            system("yay -S lightdm rofi polybar librewolf-bin i3-git neofetch thunar lxappearance vim alacritty");
+            system("yay -S rofi polybar librewolf-bin i3-wm neofetch thunar lxappearance vim alacritty");
         else if(text==2)
-            system("yay -S lightdm rofi polybar librewolf-bin i3-git neofetch thunar lxappearance neovim alacritty");
+            system("yay -S rofi polybar librewolf-bin i3-wm neofetch thunar lxappearance neovim alacritty");
         else if(text==3)
-            system("yay -S lightdm rofi polybar librewolf-bin i3-git neofetch thunar lxappearance vscodium-bin alacritty");
+            system("yay -S rofi polybar librewolf-bin i3-wm neofetch thunar lxappearance vscodium-bin alacritty");
         else if(text==4)
-            system("yay -S lightdm rofi polybar librewolf-bin i3-git neofetch thunar lxappearance code alacritty");
+            system("yay -S rofi polybar librewolf-bin i3-wm neofetch thunar lxappearance code alacritty");
     }
     else if(browser==3)
     {
         if(text==1)
-            system("yay -S lightdm rofi polybar surf i3-git neofetch thunar lxappearance vim alacritty");
+            system("yay -S rofi polybar surf i3-wm neofetch thunar lxappearance vim alacritty");
         else if(text==2)
-            system("yay -S lightdm rofi polybar surf i3-git neofetch thunar lxappearance neovim alacritty");
+            system("yay -S rofi polybar surf i3-wm neofetch thunar lxappearance neovim alacritty");
         else if(text==3)
-            system("yay -S lightdm rofi polybar surf i3-git neofetch thunar lxappearance vscodium-bin alacritty");
+            system("yay -S rofi polybar surf i3-wm neofetch thunar lxappearance vscodium-bin alacritty");
         else if(text==4)
-            system("yay -S lightdm rofi polybar surf i3-git neofetch thunar lxappearance code alacritty");
+            system("yay -S rofi polybar surf i3-wm neofetch thunar lxappearance code alacritty");
     }
     printf("FINISHED INSTALLING PACKAGES\n");
-    system("sudo systemctl enable lightdm; sudo systemctl start lightdm");
+    system("neofetch");
+    sleep(10);
+    system("reboot");
 }
