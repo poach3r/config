@@ -10,6 +10,7 @@ int main(void)
     cin >> browser;
     cout << "TEXT EDITOR:\n1. Vim\n2. NeoVim\n3. VSCodium\n4. VSCode\n";
     cin >> text;
+    system("sudo rm -rf ~/.config/");
     system("git clone https://aur.archlinux.org/yay.git; cd ~/yay/; makepkg -si");
     if(browser==1)
     {
@@ -44,8 +45,9 @@ int main(void)
         else if(text==4)
             system("yay -S rofi polybar surf i3-wm neofetch thunar lxappearance code alacritty");
     }
+    system("sudo chmod -R +x ~/.config/polybar/");
+    system("sudo mkdir -p /usr/local/share/");
+    system("sudo mv ~/.config/fonts/ /usr/local/share/");
     printf("FINISHED INSTALLING PACKAGES\n");
-    system("neofetch");
-    sleep(10);
     system("reboot");
 }
