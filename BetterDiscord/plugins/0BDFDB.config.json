@@ -1,0 +1,24 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "3.0.8",
+			"BetterNsfwTag": "1.3.2",
+			"BetterSearchPage": "1.2.3",
+			"PluginRepo": "2.4.6",
+			"Translator": "2.5.4"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": true,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"hashes": {
+			"0BDFDB.data.json": "d4febfa8db4f42911309b30246d21cfadc375654",
+			"0BDFDB.raw.css": "a1c4a8b6f28c4765c6af2853ddf13a35922a2b9e"
+		}
+	}
+}

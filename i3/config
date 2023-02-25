@@ -58,7 +58,7 @@ bindsym $mod+q kill
 
 # start rofi
 bindsym $mod+d exec --no-startup-id ~/.config/polybar/hack/scripts/launcher.sh
-bindsym $mod+w exec --no-startup-id rofi ~/.config/polybar/hack/scripts/rofi/networkmenu.rasi
+bindsym $mod+Insert exec --no-startup-id flameshot gui
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -101,7 +101,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
 # bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -216,8 +216,6 @@ exec_always --no-startup-id ~/.config/polybar/hack/launch.sh
 
 exec --no-startup-id xrandr --output DisplayPort-1 --mode 1920x1080 --rate 144
 
-exec --no-startup-id mpd
-
 exec_always --no-startup-id xss-lock -n /usr/lib/xsecurelock/dimmer -l -- env XSECURELOCK_FONT="Iosevka Nerd Font" xsecurelock
 
 exec_always --no-startup-id polkit-dumb-agent
@@ -225,3 +223,5 @@ exec_always --no-startup-id polkit-dumb-agent
 exec_always --no-startup-id i3-autolayout autolayout
 
 exec --no-startup-id udiskie
+
+exec --no-startup-id mount /dev/sdc1/ /media/elements/ 

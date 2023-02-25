@@ -1,1 +1,14 @@
-{}
+{
+    "PluginRepo": true,
+    "BetterVolume": true,
+    "Translator": true,
+    "BDFDB": true,
+    "CallTimeCounter": true,
+    "ZeresPluginLibrary": true,
+    "AutoIdleOnAFK": true,
+    "AutoScroll": true,
+    "BetterInvites": true,
+    "BetterMessageLinks": false,
+    "BetterNsfwTag": true,
+    "BetterSearchPage": true
+}
